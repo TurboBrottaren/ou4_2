@@ -57,11 +57,19 @@ cpp_end_time = pc()
 print(f'Time in seconds {cpp_end_time - cpp_start_time}')
 
 
-plt.plot(py_n, py_time, 'bo', cpp_n, cpp_time, 'ro')
-plt.title('fib(n) n vs time')
+
+
+plt.plot(cpp_n,cpp_time ,'bo',py_n, py_time,'ro')
 plt.xlabel('n')
-plt.ylabel('Time [s]')
-plt.savefig('fib_plot.png')
+plt.ylabel('time in sedonds')
+plt.title('time and n')
+plt.savefig('fib_c_new.png')
+
+# plt.plot(py_n, py_time, 'bo', cpp_n, cpp_time, 'ro')
+# plt.title('fib(n) n vs time')
+# plt.xlabel('n')
+# plt.ylabel('Time [s]')
+# plt.savefig('fib_plot.png')
 
 
 # def main():
