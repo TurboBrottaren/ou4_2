@@ -1,15 +1,6 @@
 #!/usr/bin/env python3
 
 
-"""
-Solutions to module 4
-Student: Isak Jonsson 
-Mail: Isak.Jonsson.1548@student.uu.se
-Reviewed by: Jinci Brettschneider
-Reviewed date: 5/21/2021
-"""
-
-
 from time import perf_counter as pc
 import matplotlib.pyplot as plt
 from heltal import Heltal
@@ -23,7 +14,7 @@ def fib_py(n):
 
 
 n1=30
-n2=45
+n2=35
 time_cpp=[]
 n_cpp=[]
 time_py=[]
@@ -51,7 +42,7 @@ for n in range(n1,n2):
 
 print(f'fib(n) for C++ with n=47')
 start_cpp = pc()
-print(Heltal(47).fib())
+print(Heltal(35).fib())
 end_cpp = pc()
 print(f'Time in seconds {round(end_cpp-start_cpp, 2)}')
 
