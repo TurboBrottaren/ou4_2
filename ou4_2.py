@@ -60,11 +60,11 @@ plt.ylabel('Time [s]')
 plt.savefig('fib_plot.png')
 
 
-def main():
-	f = Heltal(5)
-	print(f.get())
-	f.set(7)
-	print(f.get())
+# def main():
+# 	f = Heltal(5)
+# 	print(f.get())
+# 	f.set(7)
+# 	print(f.get())
 
-if __name__ == '__main__':
-	main()
+# if __name__ == '__main__':
+# 	main()
