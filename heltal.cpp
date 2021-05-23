@@ -1,13 +1,13 @@
 #include <cstdlib>
 // Integer class 
 
-"""
-Solutions to module 4
-Student: Oskar Ekstrand
-Mail: oskar.ekstrand.1905@student.uu.se
-Reviewed by:
-Reviewed date: 
-"""
+// """
+// Solutions to module 4
+// Student: Oskar Ekstrand
+// Mail: oskar.ekstrand.1905@student.uu.se
+// Reviewed by:
+// Reviewed date: 
+// """
 
 class Heltal{
 	public:
