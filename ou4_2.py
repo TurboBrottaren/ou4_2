@@ -26,8 +26,10 @@ py_time = []
 cpp_time = []
 n_low = 30
 n_high = 35
-py_n = [[i for i in range(n_low, n_high)]]
-cpp_n = [[i for i in range(n_low, n_high)]]
+#py_n = [[i for i in range(n_low, n_high)]]
+#cpp_n = [[i for i in range(n_low, n_high)]]
+py_n = []
+cpp_n = []
 
 for i in range(n_low, n_high):
 	
@@ -38,7 +40,7 @@ for i in range(n_low, n_high):
 	py_end_time = pc()
 	print(f'Time in seconds {py_end_time - py_start_time}')
 	py_time.append({py_end_time - py_start_time})	
-
+	py_n.append(i)
 
 	h = Heltal(i)
 	print('C++ code running fib(n) for n =', i)
@@ -47,7 +49,7 @@ for i in range(n_low, n_high):
 	cpp_end_time = pc()
 	print(f'Time in seconds {cpp_end_time - cpp_start_time}')
 	cpp_time.append({cpp_end_time - cpp_start_time})
-
+	cpp_n.append(i)
 
 h_47 = Heltal(36)
 print('C++ code running fib(n) for n = 47')
