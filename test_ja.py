@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 Solutions to module 4
 Student: Oskar Ekstrand
@@ -57,13 +55,3 @@ plt.title('fib(n) n vs time')
 plt.xlabel('n')
 plt.ylabel('Time [s]')
 plt.savefig('fib_plot.png')
-
-
-def main():
-	f = Heltal(5)
-	print(f.get())
-	f.set(7)
-	print(f.get())
-
-if __name__ == '__main__':
-	main()
