@@ -25,19 +25,21 @@ def fib_py(n):
 py_time = []
 cpp_time = []
 n_low = 30
-n_high = 45
+n_high = 40
 n_list = [[i for i in range(n_low, n_high)]]
 
 for i in range(n_low, n_high):
 	
-	h = Heltal(i)
+	
 	print('Python code running fib(n) for n =', i)
 	py_start_time = pc()
-	print(h.fib())
+	print(fib_py(i))
 	py_end_time = pc()
 	print(f'Time in seconds {py_end_time - py_start_time}')
 	py_time.append({py_end_time - py_start_time})	
 
+
+	h = Heltal(i)
 	print('C++ code running fib(n) for n =', i)
 	cpp_start_time = pc()
 	print(h.fib())
@@ -45,7 +47,8 @@ for i in range(n_low, n_high):
 	print(f'Time in seconds {cpp_end_time - cpp_start_time}')
 	cpp_time.append({cpp_end_time - cpp_start_time})
 
-h_47 = Heltal(47)
+
+h_47 = Heltal(40)
 print('C++ code running fib(n) for n = 47')
 cpp_start_time = pc()
 print(h_47.fib())
@@ -53,7 +56,7 @@ cpp_end_time = pc()
 print(f'Time in seconds {cpp_end_time - cpp_start_time}')
 
 
-plt.plot(n_list, py_time, 'bo',n_list, cpp_time, 'ro')
+plt.plot(n_list, py_time, 'bo', n_list, cpp_time, 'ro')
 plt.title('fib(n) n vs time')
 plt.xlabel('n')
 plt.ylabel('Time [s]')
