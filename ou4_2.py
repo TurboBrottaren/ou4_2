@@ -31,13 +31,12 @@ cpp_n = [i for i in range(n_low, n_high)]
 
 for i in range(n_low, n_high):
 	
-	
 	print('Python code running fib(n) for n =', i)
 	py_start_time = pc()
 	print(fib_py(i))
 	py_end_time = pc()
 	print(f'Time in seconds {py_end_time - py_start_time}')
-	py_time.append({py_end_time - py_start_time})	
+	py_time.append(py_end_time - py_start_time)	
 
 	h = Heltal(i)
 	print('C++ code running fib(n) for n =', i)
@@ -45,7 +44,7 @@ for i in range(n_low, n_high):
 	print(h.fib())
 	cpp_end_time = pc()
 	print(f'Time in seconds {cpp_end_time - cpp_start_time}')
-	cpp_time.append({cpp_end_time - cpp_start_time})
+	cpp_time.append(cpp_end_time - cpp_start_time)
 	
 
 h_47 = Heltal(36)
